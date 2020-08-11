@@ -1,0 +1,121 @@
+.fill {
+  font-family: 'Open Sans', sans-serif;
+  color: $color-dark-green;
+  border-bottom: 1px solid $white-two;
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--box {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    &--title {
+      font-size: 1.125em;
+      text-transform: uppercase;
+    }
+
+    &--img {
+      padding-bottom: 0;
+      margin-right: 10px;
+      width: 21px;
+      height: 18px;
+    }
+
+    &--img2 {
+      height: 16px;
+      width: 18px;
+      align-self: center;
+      text-align: end;
+      cursor: pointer;
+      color: $gunmetal;
+    }
+  }
+}
+
+.form {
+  font-size: 0.875em;
+  padding-bottom: 20px;
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  &__job {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    &--box {
+      margin-top: 10px;
+      display: flex;
+
+      &--button {
+        width: 140px;
+        height: 30px;
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+        border-radius: 5px;
+        border-style: none;
+        background-color: $orange;
+        cursor: pointer;
+      }
+
+      &--preview {
+        height: 30px;
+        width: 30px;
+        border: 0.5px solid $green-light;
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  &__linkedin {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  &__github {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  input {
+    padding-left: 5px;
+    border: 0.5px solid $green-light;
+    height: 30px;
+    margin-top: 7px;
+  }
+  ::placeholder {
+    color: $pinkish-grey;
+  }
+
+  fieldset {
+    padding: 0;
+  }
+}

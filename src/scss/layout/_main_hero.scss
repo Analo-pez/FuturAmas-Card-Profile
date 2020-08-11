@@ -1,0 +1,118 @@
+.hero {
+  background-color: $slightly-grey;
+  width: 100%;
+  height: 85vh;
+  padding-top: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 59px;
+  @include tablet {
+    height: 90vh;
+  }
+}
+.img-main-hero {
+  width: 250px;
+  height: 63px;
+  margin-bottom: 35.4px;
+  @include tablet {
+    width: 419px;
+    height: 105px;
+    flex-shrink: 0;
+  }
+}
+
+.main-text-title {
+  font-family: $font-start-title;
+  font-size: 19.2px;
+  color: $orange;
+  text-align: center;
+  @include tablet {
+    font-size: 24px;
+  }
+}
+.main-text-paragraph {
+  font-family: $font-start-main;
+  font-size: 12.8px;
+  color: $color-dark-green;
+  text-align: center;
+  padding-bottom: 17.8px;
+  width: 268px;
+  line-height: normal;
+  @include tablet {
+    font-size: 16px;
+    width: 331px;
+  }
+}
+.icons-box {
+  width: 268px;
+  height: 73.8px;
+  border: 1.6px solid $orange-transparent;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 17.8px;
+  @include tablet {
+    width: 325px;
+    height: 86px;
+    margin-top: 27px;
+  }
+}
+.fa,
+.foo {
+  display: block;
+  text-align: center;
+  color: $orange;
+  padding-bottom: 2px;
+}
+.foo,
+.testing {
+  font-size: 20px;
+  @include tablet {
+    font-size: 30px;
+  }
+}
+.testing2 {
+  font-size: 18px;
+  @include tablet {
+    font-size: 25px;
+    padding-top: 2px;
+  }
+}
+.span-text {
+  font-size: 12.8px;
+  color: $color-font-grey;
+  font-family:$font-start-main;
+  @include tablet{
+    font-size:16px;
+  }
+}
+.icon-square {
+  width: 60px;
+  height: 48.8px;
+  text-align: center;
+  padding-top: 9px;
+}
+
+.start-button {
+  width: 129px;
+  height: 42px;
+  background-color: $blue;
+  border-radius: 21px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+  margin-top: 38.6px;
+  font-family: $font-start-main;
+  font-weight: 600;
+  cursor: pointer;
+  @include tablet {
+    margin-top: 170px;
+    /*     margin-bottom:59px; */
+  }
+}

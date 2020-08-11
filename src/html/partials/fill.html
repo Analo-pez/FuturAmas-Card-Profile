@@ -1,0 +1,99 @@
+<section class="fill wrapper">
+  <div class="fill__section js-coll">
+    <div class="fill__section--box">
+      <i class="fa fa-keyboard-o fill__section--img" aria-hidden="true"></i>
+      <h2 class="fill__section--title">rellena</h2>
+    </div>
+    <i class="fas fa-chevron-down fill__section--img2"></i>
+  </div>
+  <div class="form content js-contentFill js-collapsable">
+    <fieldset>
+      <div class="form__name">
+        <label for="name">Nombre completo</label>
+        <input
+          class="input__name js-input-name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Ej: Leela Turanga"
+          required
+        />
+      </div>
+      <div class="form__job">
+        <label for="job">Puesto</label>
+        <input
+          class="input__job js-input-job"
+          type="text"
+          id="job"
+          name="job"
+          placeholder="Ej: Front-end developer"
+          required
+        />
+      </div>
+      <div class="form__img">
+        <label for="img">Imagen de perfil</label>
+        <div class="form__img--box">
+          <buttonxfbi
+            class="form__img--box--button js__profile-trigger"
+            type="button"
+          >
+            Añadir imagen
+          </buttonxfbi>
+          <input
+            class="form__img--box--check action__hiddenField js__profile-upload-btn"
+            id="imgOption"
+            type="file"
+            name="imgOptions"
+          />
+          <div
+            class="form__img--box--preview profile__preview js__profile-preview"
+          ></div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="form__email">
+        <label for="email">Email</label>
+        <input
+          class="input__email js-input-email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ej: leela@planet-express.com"
+          required
+        />
+      </div>
+      <div class="form__phone">
+        <label for="phone">Teléfono</label>
+        <input
+          class="input__phone js-input-phone"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Ej: 555 2587695"
+          pattern="[0-9]{9}"
+        />
+      </div>
+      <div class="form__linkedin">
+        <label for="Linkedin">Linkedin</label>
+        <input
+          class="input__linkedin js-input-linkedin"
+          type="text"
+          id="linkedin"
+          name="linkedin"
+          placeholder="Ej: linkedin.com/Leela"
+        />
+      </div>
+      <div class="form__github">
+        <label for="github">Github</label>
+        <input
+          class="input__github js-input-github"
+          type="text"
+          id="github"
+          name="github"
+          placeholder="Ej:@leelaturanga"
+        />
+      </div>
+    </fieldset>
+  </div>
+</section>

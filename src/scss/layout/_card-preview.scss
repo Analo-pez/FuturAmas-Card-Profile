@@ -1,0 +1,163 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #f5f5f5, #ffffff 9%);
+
+  @include tablet {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+.cardPreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 457px;
+  background-color: $pale-grey;
+  padding: 38px 45px 40px 45px;
+
+  @include tablet {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-basis: 50%;
+    margin-left: 30px;
+  }
+
+  &__cardWrapper {
+    width: 240px;
+  }
+
+  &__clearButton {
+    height: 30px;
+    width: 75px;
+    background-color: transparent;
+    border-radius: 15px;
+    font-family: $font-start-main;
+    border: solid $white 1px;
+    font-size: 12px;
+    text-align: center;
+    outline: inherit;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    i {
+      padding-right: 5px;
+    }
+  }
+
+  &__card {
+    width: 240px;
+    overflow: hidden;
+    background-color: $white;
+    font-family: $font-main-title;
+    padding-top: 21px;
+    box-shadow: 2px 2px 9px 0px rgba(173, 171, 173, 1);
+  }
+
+  &__info {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    border-left: 5px solid;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__position {
+    font-size: 16px;
+    color: $color-font-grey;
+    font-weight: lighter;
+    margin-top: 4px;
+  }
+
+  &__profileImage {
+    height: 200px;
+    background-image: url('../images/profile-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+
+  &__socialMedia {
+    display: flex;
+    justify-content: flex-start;
+    height: 45px;
+    padding-left: 20px;
+  }
+
+  &__socialMediaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+}
+
+.js_palette1_color {
+  color: $color-dark-green;
+}
+
+.js_palette1_border_color {
+  border-color: $green-light;
+}
+
+.js_palette1_border_box {
+  color: $blue;
+}
+
+.js_palette2_color {
+  color: $dried-blood;
+}
+
+.js_palette2_border_color {
+  border-color: $tomato;
+}
+
+.js_palette2_border_box {
+  color: $rusty-red;
+}
+
+.js_palette3_color {
+  color: $slate;
+}
+
+.js_palette3_border_color {
+  border-color: $light-grey-blue;
+}
+
+.js_palette3_border_box {
+  color: $faded-orange;
+}
+.js_palette4_color {
+  color: $orange-hair;
+}
+
+.js_palette4_border_color {
+  border-color: $orange-tshirt;
+}
+
+.js_palette4_border_box {
+  color: $blue-jeans;
+}
+.js_palette5_color {
+  color: $black;
+}
+
+.js_palette5_border_color {
+  border-color: $yellow-skin;
+}
+
+.js_palette5_border_box {
+  color: $pink-trousers;
+}

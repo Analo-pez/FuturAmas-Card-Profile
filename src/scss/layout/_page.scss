@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+fieldset {
+  border: 0;
+}
+
+//COLLAPSIBLE (DESPLEGAR EN JS CON EVENTO)
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+.form__section {
+  min-width: 290px;
+}
+
+//photo component
+.action {
+  text-align: center;
+  margin: 30px;
+}
+.action__upload-btn {
+  background: deeppink;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 0 0 5px rgba(#000, 0.3);
+  box-sizing: border-box;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 250px;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+  display: none;
+}
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.profile__image,
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+.profile__image {
+  width: 300px;
+  height: 300px;
+}
+
+.profile__preview {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
+
+//HIDE ICONS
+.hidden-icon {
+  display: none !important;
+}

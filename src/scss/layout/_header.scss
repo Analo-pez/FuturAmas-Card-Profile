@@ -1,0 +1,8 @@
+.header__logo {
+    width: 201px;
+    height: 50px;
+    margin: 31px 79px 30px 40px;
+    @include tablet {
+        margin: 31px 527px 30px 40px;
+    }
+}

@@ -1,0 +1,34 @@
+.footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-top: 1px solid $color-footer-border;
+    @include tablet {
+        flex-direction:row;
+        justify-content:space-between;
+ /*        height:60px; *//*  SE ME QUEDA IGUAL SI PONGO ESTA ALTURA */
+    }
+}
+.footer-logo{
+    width:103px;
+    height:40px;
+    margin-bottom:20px;
+    @include tablet{
+        margin-right:40px;
+        margin-top:30px;
+    
+    }
+}
+.footer-text{
+    color:$color-font-footer;
+    font-size:14px;
+    font-family:$font-start-main;
+    padding-top:18px;
+    padding-bottom:12px;
+    opacity:0.5;
+    @include tablet{
+        margin-left:41px;
+        margin-top:10px;
+    }
+}
